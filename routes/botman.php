@@ -8,7 +8,7 @@ $botman->hears('.*(Hola|buenas|buenos dias|Buenas tardes|Buenas noches).*', func
     $bot->reply('Hola! que necesitas?' );
 });
 
-$botman->hears('.*(necesito mas informacion|necesito una extension.*', function ($bot) {
+$botman->hears('.*(necesito mas informacion|necesito una extension).*', function ($bot) {
     $bot->reply('Para mas informacion escoge una de las opciones: Departamentos, Chiste' );
 });
 
@@ -29,9 +29,9 @@ $botman->hears('Design', function ($bot) {
     $bot->reply('Vale, su extencion es: 34 0303 0003');
 });
 $botman->hears('Gracias', function ($bot) {
-    $bot->reply('Denada! Algo mas?');
+    $bot->reply('De nada! Algo mas?');
 });
-$botman->hears('.*(No gracias|no|no ya esta|.*', function ($bot) {
+$botman->hears('.*(No gracias|no|no ya esta).*', function ($bot) {
     $bot->reply('Que tengas un buen dia!');
 });
 

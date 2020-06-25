@@ -10,4 +10,8 @@ $botman->hears('Hi', function ($bot) {
 $botman->hears('Hola', function ($bot) {
     $bot->reply('Hola picha!');
 });
+
+$botman->hears('', function ($bot) {
+    $bot->reply('');
+});
 $botman->hears('Start conversation', BotManController::class.'@startConversation');

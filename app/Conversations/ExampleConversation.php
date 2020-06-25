@@ -13,23 +13,25 @@ class ExampleConversation extends Conversation
     /**
      * First question
      */
-    public function askReason()
+    public function askQuestion()
     {
+
         $question = Question::create("¿Que quieres que haga por ti?")
             ->fallback('Unable to ask question')
             ->callbackId('ask_reason')
             ->addButtons([
                 Button::create('cuentame un chiste')->value('joke'),
                 Button::create('Frase del dia')->value('quote'),
+
             ]);
 
         return $this->ask($question, function (Answer $answer) {
             if ($answer->isInteractiveMessageReply()) {
-                if ($answer->getValue() === 'joke') {
+                if ($answer->getValue() === 'Chiste') {
                     $joke = json_decode(file_get_contents('http://api.icndb.com/jokes/random'));
-                    $this->say($joke->value->joke);
+                    $this->say($Chiste->value->Chiste);
                 } else {
-                    $this->say(Inspiring::quote());
+                    $this->say(::informacion());
                 }
             }
         });

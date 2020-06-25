@@ -1,66 +1,703 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>BotMan Studio</title>
+    <title>RenegadosTeam</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Styles -->
-    <style>
-        body {
-            font-family: "Varela Round", sans-serif;
-            margin: 0;
-            padding: 0;
-            background: radial-gradient(#57bfc7, #45a6b3);
-        }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-        .container {
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-        }
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        .content {
-            text-align: center;
-        }
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-        .logo {
-            margin-right: 40px;
-            margin-bottom: 20px;
-        }
-
-        .links a {
-            font-size: 1.25rem;
-            text-decoration: none;
-            color: white;
-            margin: 10px;
-        }
-
-        @media all and (max-width: 500px) {
-
-            .links {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    </style>
+    <!-- =======================================================
+    * Template Name: Hidayah - v2.2.0
+    * Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
 </head>
-<body>
-<div class="container">
-    <div class="content">
-        <div class="logo">
-            <svg viewBox="0 0 225 212" width="300" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>.st0{fill:url(#SVGID_1_);} .st1{fill:url(#SVGID_2_);} .st2{fill:url(#SVGID_3_);} .st3{fill:url(#SVGID_4_);} .st5{fill:#FDD800;} .st6{fill:none;stroke:#231F20;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st7{fill:none;stroke:#EB0D8C;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st8{fill:none;stroke:#4EC3C8;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st9{fill:#FFFFFF;stroke:#4EC3C8;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st10{fill:#4EC3C8;} .st11{fill:none;stroke:#49C8F5;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st12{fill:none;stroke:#FEDA00;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st13{fill:#231F20;} .st14{fill:#DBDAD9;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st15{fill:none;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st16{fill:#F8B232;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st17{fill:#FFFFFF;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st18{fill:#193946;} .st19{fill:none;stroke:#F1F2F2;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st20{clip-path:url(#XMLID_10_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st21{clip-path:url(#XMLID_11_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st22{clip-path:url(#XMLID_11_);fill:none;stroke:#E4E5E6;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st23{clip-path:url(#XMLID_12_);fill:none;stroke:#BE8A25;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st24{clip-path:url(#XMLID_13_);fill:none;stroke:#BE8A25;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st25{fill:none;stroke:#F1F2F2;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st26{fill:none;stroke:#F8B232;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st27{clip-path:url(#XMLID_14_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st28{clip-path:url(#XMLID_15_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st29{clip-path:url(#XMLID_15_);fill:none;stroke:#E4E5E6;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st30{clip-path:url(#XMLID_16_);fill:none;stroke:#BE8A25;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st31{clip-path:url(#XMLID_17_);fill:none;stroke:#BE8A25;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st32{fill:#FEDA00;} .st33{fill:#FFFFFF;stroke:#FEDA00;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st34{fill:#49C8F5;} .st35{fill:#EB0D8C;} .st36{fill:#FFFFFF;stroke:#EB0D8C;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st37{fill:#F8B232;} .st38{fill:#FFFFFF;stroke:#F8B232;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st39{fill:#DBDAD9;} .st40{fill:none;stroke:#DBDAD9;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st41{fill:#FFFFFF;stroke:#DBDAD9;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st42{fill:#DBDAD9;stroke:#193946;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><title>background</title><path fill="none" id="canvas_background" d="M-1-1h227v214H-1z"/><title>Layer 1</title><g id="Layer_2"><path id="svg_2" d="M62.9 40.3c1.6-5 7.9-8.6 13.5-7.6" class="st15"/><path id="svg_3" d="M184.6 34.1c4.9-2 11.7.5 14.5 5.4" class="st15"/><path id="svg_4" d="M165.9 117.9c.7-.1 1.2-.2 2-.2 6.2 0 11.2 5 11.2 11.2 0 6.2-5 11.2-11.2 11.2-.7 0-1.3-.1-2-.2" class="st14"/><path id="svg_5" d="M94.2 117.9c-.7-.1-1.2-.2-2-.2-6.2 0-11.2 5-11.2 11.2 0 6.2 5 11.2 11.2 11.2.7 0 1.3-.1 2-.2" class="st14"/><path id="svg_17" d="M109.2 45.4c.2-14.6 3.8-20 9.5-24.5" class="st14"/><circle id="svg_18" r="7.7" cy="13.3" cx="126.3" class="st16"/><g id="svg_19"><defs transform="translate(-62 -82.5)"><path d="M218.5 246.9h-53.2c-4.8 0-8.7-3.9-8.7-8.7v-42.3h70.6v42.3c0 4.8-3.9 8.7-8.7 8.7z" id="XMLID_4_"/></defs><use x="-62" y="-82.5" id="svg_20" fill="#DBDAD9" xlink:href="#XMLID_4_"/><clipPath transform="translate(-62 -82.5)" id="XMLID_10_"><use id="svg_21" xlink:href="#XMLID_4_"/></clipPath><use x="-62" y="-82.5" id="svg_23" fill="none" stroke="#193946" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" xlink:href="#XMLID_4_"/></g><path id="svg_24" class="st14" d="M146 133.2l10.8.1"/><path id="svg_25" d="M179.6 127.8c16.6 0 20.8 20.1 20.8 20.1" class="st15"/><path id="svg_26" class="st15" d="M215.9 163l-.2-11.1-15.2-4-11.9 11.2 8.6 11.1"/><path id="svg_27" d="M80.8 132c-14.6 7.9-29-9.6-29-9.6" class="st15"/><path id="svg_28" class="st15" d="M31.1 116.6l5.4 9.6 15.3-3.7 5.1-15.6-12.9-5.5"/><path id="svg_29" class="st14" d="M108.1 164.4h15v26.8h-15z"/><path id="svg_30" class="st14" d="M138.6 164.4h15v26.8h-15z"/><path id="svg_31" d="M168.2 203.8h-29.6v-12.6h22.1c4.1 0 7.5 3.3 7.5 7.5v5.1z" class="st14"/><path id="svg_32" d="M93.3 203.8h29.8v-12.6h-22.3c-4.1 0-7.5 3.3-7.5 7.5v5.1z" class="st14"/><g id="svg_33"><g id="svg_34"><defs transform="translate(-62 -82.5)"><path d="M246.8 184.5H139.7c-2.8 0-5.1-2.3-5.1-5.1v-46.3c0-2.8 2.3-5.1 5.1-5.1h107.2c2.8 0 5.1 2.3 5.1 5.1v46.3c0 2.8-2.3 5.1-5.2 5.1z" id="XMLID_3_"/></defs><use x="-62" y="-82.5" id="svg_35" fill="#DBDAD9" xlink:href="#XMLID_3_"/><clipPath transform="translate(-62 -82.5)" id="XMLID_11_"><use id="svg_36" xlink:href="#XMLID_3_"/></clipPath><use x="-62" y="-82.5" id="svg_39" fill="none" stroke="#193946" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" xlink:href="#XMLID_3_"/></g><path id="svg_40" d="M147.4 74.5c-3.8 4.5-9.5 7.3-15.9 7.3-6.7 0-12.7-3.1-16.5-8" class="st15"/></g><g id="svg_45"><path id="svg_46" d="M53.9 65.6c7.1 8.2 6.3 20.7-1.9 27.8l-1.5 1.2c-.4.3-.8.6-1.3.8-2.2 1.3-3.6 3.4-4.1 5.9l-4.7 28.1c-.4 2.5.3 5 1.9 6.9 7 8.3 5.9 20.8-2.5 27.7-.4.3-.8.7-1.3 1-.5.4-1.1.7-1.6 1-1.3.7-2.9.7-4.1-.2-1.3-.9-1.9-2.4-1.6-3.9l1.4-8c.3-1.7-.8-3.3-2.5-3.5l-6.1-1c-1.7-.2-3.2.9-3.5 2.5l-1.4 8c-.3 2.1-2.3 3.6-4.5 3.3-.9-.1-1.7-.6-2.3-1.3-7.1-8.2-6.2-20.7 2-27.8l1.5-1.2c.4-.3.8-.6 1.3-.8 2.2-1.3 3.6-3.4 4.1-5.9l4.7-28.1c.4-2.5-.3-5-1.9-6.9-7-8.3-5.9-20.8 2.5-27.7.9-.7 1.8-1.4 2.9-2 1.3-.8 2.9-.7 4.1.2 1.3.9 1.9 2.4 1.6 3.9l-1.4 8.1c-.3 1.7.8 3.2 2.5 3.5l6.1 1c1.7.2 3.2-.9 3.5-2.5l1.4-8c.3-2.1 2.3-3.6 4.5-3.3.8.1 1.6.5 2.2 1.2z" class="st7"/></g><path id="svg_47" class="st14" d="M56.9 106.9L44 101.4"/><g id="svg_51"><defs transform="translate(-62 -82.5)"><path id="XMLID_2_" d="M201.9 195.9l-8.7 5.3-8-5.3 1.7-11.4h13.5z"/></defs><use x="-62" y="-82.5" id="svg_52" fill="#F8B232" xlink:href="#XMLID_2_"/><clipPath transform="translate(-62 -82.5)" id="XMLID_12_"><use id="svg_53" xlink:href="#XMLID_2_"/></clipPath><use x="-62" y="-82.5" id="svg_55" fill="none" stroke="#193946" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" xlink:href="#XMLID_2_"/></g><g id="svg_56"><defs transform="translate(-62 -82.5)"><path id="XMLID_1_" d="M193.2 200.4l9.3 27.4-9.3 11.1-10-11.1z"/></defs><use x="-62" y="-82.5" id="svg_57" fill="#F8B232" xlink:href="#XMLID_1_"/><clipPath transform="translate(-62 -82.5)" id="XMLID_13_"><use id="svg_58" xlink:href="#XMLID_1_"/></clipPath><use x="-62" y="-82.5" id="svg_61" fill="none" stroke="#193946" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" xlink:href="#XMLID_1_"/></g><path id="svg_62" class="st19" d="M142.9 156.4h-1.1"/><path id="svg_63" class="st25" d="M147.4 177.8v-7.6"/><path id="svg_64" d="M157.1 143.6v9.1c0 2-1.7 3.7-3.7 3.7h-4.9" class="st19"/><path id="svg_65" class="st19" d="M108.1 121.4H103v4.1"/></g><g id="svg_68"><path id="svg_67" d="M173.4 68.8c0 6.3-.6 11.5-6.4 11.5s-6.4-5.1-6.4-11.5 1.2-11.5 6.4-11.5c5.2.1 6.4 5.2 6.4 11.5z" class="st18"/></g><g id="svg_70"><path id="svg_69" d="M102.4 69.8c0 6.3-.6 11.5-6.4 11.5s-6.4-5.1-6.4-11.5 1.2-11.5 6.4-11.5c5.2.1 6.4 5.2 6.4 11.5z" class="st18"/></g></svg>
-        </div>
 
-        <div class="links">
-            <a href="/botman/tinker">Tinker</a>
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            <div class="col-xl-10 d-flex align-items-center justify-content-end">
+
+                <h1 class="logo mr-auto"><a href="http://127.0.0.1:8000">RenegadosTeam</a></h1>
+
+                <nav class="nav-menu d-none d-lg-block">
+                    <ul>
+                        <li class="active"><a href="http://127.0.0.1:8000">Inicio</a></li>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#team">Equipo</a></li>
+                        <li class="drop-down"><a href="">Nuestros Proyectos</a>
+                            <ul>
+                                <li><a href="/botman/tinker">BotMan</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </nav><!-- .nav-menu -->
+
+            </div>
         </div>
     </div>
-</div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animated fadeInDown">Evolucionamos tu negocio!</h2>
+                        <p class="animated fadeInUp">Si lo piensas, es posible...</p>
+                        <a href="#about" class="btn-get-started animated fadeInUp scrollto">Leer más ..</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animated fadeInDown">Diseño Limpio</h2>
+                        <p class="animated fadeInUp">Hay aspectos decisivos en el diseño web que debes tener en cuenta para no perder clientes y ventas en tu negocio online.</p>
+                        <a href="#about" class="btn-get-started animated fadeInUp scrollto">Leer más ..</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animated fadeInDown">Full Responsive (Adaptable)</h2>
+                        <p class="animated fadeInUp">El diseño web responsive o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos. Desde ordenadores de escritorio hasta tablets y móviles.</p>
+                        <a href="#about" class="btn-get-started animated fadeInUp scrollto">Leer más ..</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                </div>
+
+                <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                    <h3>¿EN QUÉ NOS DIFERENCIAMOS DEL RESTO?</h3>
+                    <p>En Renegados nos especializamos en conocer al cliente y el sector al que se dedica para poder ofrecer el mejor diseño a cada tipo de negocio.</p>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bxs-devices"></i></div>
+                        <h4 class="title"><a href="">¿EN QUÉ CONSISTE EL DISEÑO RESPONSIVE?</a></h4>
+                        <p class="description">Se trata de redimensionar y recolocar los elementos de la web de forma que se adapten al ancho de cada dispositivo permitiendo una correcta visualización y una mejor experiencia de usuario</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-task"></i></div>
+                        <h4 class="title"><a href="">OPTIMIZACIÓN DE PRODUCTO</a></h4>
+                        <p class="description">Estudiamos el comportamiento de tus usuarios para determinar en qué elementos de la web se tiene que actuar. Con la optimización web se mejoran los puntos débiles y se refuerzan los puntos fuertes. Es imprescindible el análisis de su comportamiento, de la respuesta ante el planteamiento y el diseño web.</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-atom"></i></div>
+                        <h4 class="title"><a href="">ASESOR TECNOLÓGICO</a></h4>
+                        <p class="description">Nuestro asesor tecnológico tiene un amplio conocimiento de muchas de las áreas tanto en redes abiertas, como en redes cerradas en las propias empresas. Así se ayuda a tomar las mejores decisiones para poder actualizar su negocio.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center skills-content">
+
+                <div class="col-xl-5 col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill">HTML <i class="val">100%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">CSS <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">JavaScript <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-5 col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill">PHP <i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Python <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Go, Java, otros ... <i class="val">55%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+        <div class="container-fluid">
+
+            <div class="row counters">
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">232</span>
+                    <p>Clientes</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">521</span>
+                    <p>Proyectos</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">1,463</span>
+                    <p>Horas de Soporte</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">15</span>
+                    <p>Trabajadores</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container-fluid">
+
+            <div class="section-title">
+                <h2>Servicios</h2>
+                <h3>NUESTROS SERVICIOS</h3>
+                <p>Más servicios que ofrecemos para mejorar su negocio</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 icon-box">
+                            <div class="icon"><i class="ri-pie-chart-line"></i></div>
+                            <h4 class="title"><a href="">DESARROLLO NATIVO</a></h4>
+                            <p class="description">Las aplicaciones nativas se desarrollan utilizando el lenguaje específico para cada plataforma. Esto nos permite acceder a las API’s (Interfaz de Programación de Aplicaciones) disponibles y ofrecer un mejor rendimiento</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 icon-box">
+                            <div class="icon"><i class="ri-stack-line"></i></div>
+                            <h4 class="title"><a href="">OPTIMIZACIÓN DE PRODUCTO</a></h4>
+                            <p class="description">Estudiamos el comportamiento de tus usuarios para determinar en qué elementos de la web se tiene que actuar. Con la optimización web se mejoran los puntos débiles y se refuerzan los puntos fuertes. Es imprescindible el análisis de su comportamiento, de la respuesta ante el planteamiento y el diseño web.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 icon-box">
+                            <div class="icon"><i class="ri-markup-line"></i></div>
+                            <h4 class="title"><a href="">ASESOR TECNOLÓGICO</a></h4>
+                            <p class="description">Nuestro asesor tecnológico tiene un amplio conocimiento de muchas de las áreas tanto en redes abiertas, como en redes cerradas en las propias empresas. Así se ayuda a tomar las mejores decisiones para poder actualizar su negocio.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 icon-box">
+                            <div class="icon"><i class="ri-shape-line"></i></div>
+                            <h4 class="title"><a href="">IDENTIDAD GRÁFICA</a></h4>
+                            <p class="description">La identidad gráfica es el primer contacto que tiene una organización con su público y con sus consumidores potenciales. Es la introducción de una larga historia de construcción de una marca. Un buen diseño –atractivo, preciso, relevante– es vital, pues debe generar una conexión funcional o emocional al instante.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 icon-box">
+                            <div class="icon"><i class="ri-fingerprint-line"></i></div>
+                            <h4 class="title"><a href="">WEB-APPS</a></h4>
+                            <p class="description">Una web app es una versión de la página web optimizada y adaptable a cualquier dispositivo móvil. Dicho de otra manera, es una página que se puede abrir desde el navegador de cualquier terminal independientemente del sistema operativo que utilice.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 icon-box">
+                            <div class="icon"><i class="ri-body-scan-line"></i></div>
+                            <h4 class="title"><a href="">POSICIONAMIENTO SEM</a></h4>
+                            <p class="description">Gracias a Google Adwords, cualquier negocio puede iniciar una campaña SEM en pocos pasos, y puede comenzar a disfrutar de resultados en breve. Más del 60% de las campañas de AdWords se llevan a cabo en pocas horas. No dude en disponer de una campaña y lanzar de la manera más rápida su negocio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="text-center">
+                <h3>Sueña..</h3>
+                <p> Sólo sueña, nosotros nos encargamos de hacerlo realidad.</p>
+            </div>
+
+        </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container-fluid">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <h3>Mira nuestro <span>Portfolio</span></h3>
+                <p>Muestras de algunos de nuestros proyectos.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Todos</li>
+                        <li data-filter=".filter-app">Webs App</li>
+                        <li data-filter=".filter-card">Empresas</li>
+                        <li data-filter=".filter-web">Autónomos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container justify-content-center">
+
+                <div class="col-xl-10">
+                    <div class="row">
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 1</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End portfolio item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End portfolio item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 2</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End portfolio item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 2</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End portfolio item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 2</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End portfolio item -->
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container-fluid">
+
+            <div class="section-title">
+                <h2>Opinones</h2>
+                <h3>¿Qué dicen <span>nuestros clientes</span> sobre nosotros</h3>
+                <p>No te enfoques en tus competidores. Enfócate en tus clientes. .</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="testimonial-item">
+                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                                <h3>Pepe Lomo</h3>
+                                <h4>Ceo &amp; Founder of Pixar</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Justo lo que necesitaba para mi empresa, fue soñar y se hizo realidad.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial-item -->
+
+                        <div class="col-lg-6">
+                            <div class="testimonial-item mt-4 mt-lg-0">
+                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                                <h3>Sara García</h3>
+                                <h4>Autónoma</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Necesitaba una web agradable para mis clientes y tengo la mejor web del mundo.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial-item -->
+
+                        <div class="col-lg-6">
+                            <div class="testimonial-item mt-4">
+                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                                <h3>María Laportu</h3>
+                                <h4>Empresaria</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Me diseñaron una web maravillosa. Ahora mis clientes pueden hacerme pedidos online.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial-item -->
+
+                        <div class="col-lg-6">
+                            <div class="testimonial-item mt-4">
+                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                                <h3>Carlos Fernández</h3>
+                                <h4>Autónomo</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                   Rápidos y eficaces, en poco tiempo tuve mi negocio e-commerce produciendo beneficios.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial-item -->
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+        <div class="container-fluid">
+
+            <div class="section-title">
+                <h2>Equipo</h2>
+                <h3>Nuestro genial <span>Equipo</span></h3>
+                <p>Ellos hacen posibles vuestros sueños e ideas.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="member">
+                                <img src="https://i.postimg.cc/YSBNSGkS/team-1.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Claudia Casals</h4>
+                                        <span>Developer</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Member Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+                            <div class="member">
+                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Magalí Barriga</h4>
+                                        <span>Scrum Master</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Member Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+                            <div class="member">
+                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Javier Mármol</h4>
+                                        <span>Product Owner</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Member Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+                            <div class="member">
+                                <img src="https://i.postimg.cc/0QMnFd2V/team-4.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Jose Ortega</h4>
+                                        <span>Developer</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Member Item -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Team Section -->
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-newsletter">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <div class="footer-top">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Sobre nosotros</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Términos de servicios</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Política de Privacidad</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Nuestros Servicios</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Diseño Web</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo Web</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Productos</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Diseño Gráfico</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Contáctanos</h4>
+                            <p>
+                                Carrer Bruc 149 <br>
+                                Barcelona, 08022<br>
+                                España <br><br>
+                                <strong>Teléfono:</strong> 933 666 333<br>
+                                <strong>Email:</strong> info@renegados.com<br>
+                            </p>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3>Más información</h3>
+                            <p>Estamos en todas las redes sociales más importantes. Síguenos.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>RenegadosTeam</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/ -->
+            Diseñado por <a href="https://bootstrapmade.com/">RenegadosTeam</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

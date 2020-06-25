@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\BotManController;
 
+
 $botman = resolve('botman');
 
 $botman->hears('Hi', function ($bot) {
@@ -9,6 +10,10 @@ $botman->hears('Hi', function ($bot) {
 
 $botman->hears('Hola', function ($bot) {
     $bot->reply('Hola picha!');
+});
+
+$botman->fallback(function($bot) {
+    $bot->reply('Lo siento, no te entiendo');
 });
 
 $botman->hears('Cuentame algo', BotManController::class.'@startConversation');

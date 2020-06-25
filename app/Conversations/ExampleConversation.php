@@ -15,12 +15,14 @@ class ExampleConversation extends Conversation
      */
     public function askQuestion()
     {
-        $question = Question::create("Con que te puedo ayudar?")
+
+        $question = Question::create("¿Que quieres que haga por ti?")
             ->fallback('Unable to ask question')
             ->callbackId('ask_reason')
             ->addButtons([
-                Button::create('necesito mas informacion')->value('informacion'),
-                Button::create('Chiste')->value('Chiste'),
+                Button::create('cuentame un chiste')->value('joke'),
+                Button::create('Frase del dia')->value('quote'),
+
             ]);
 
         return $this->ask($question, function (Answer $answer) {

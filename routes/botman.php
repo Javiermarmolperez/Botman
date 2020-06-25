@@ -11,7 +11,4 @@ $botman->hears('Hola', function ($bot) {
     $bot->reply('Hola picha!');
 });
 
-$botman->hears('', function ($bot) {
-    $bot->reply('');
-});
-$botman->hears('Start conversation', BotManController::class.'@startConversation');
+$botman->hears('Cuentame algo', BotManController::class.'@startConversation');

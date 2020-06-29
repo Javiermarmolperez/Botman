@@ -21,6 +21,7 @@ class ExampleConversation extends Conversation
             ->addButtons([
                 Button::create('cuentame un chiste')->value('joke'),
                 Button::create('Frase del dia')->value('quote'),
+                Button::create('Noticias')->value('news'),
             ]);
 
         return $this->ask($question, function (Answer $answer) {
@@ -28,11 +29,23 @@ class ExampleConversation extends Conversation
                 if ($answer->getValue() === 'joke') {
                     $joke = json_decode(file_get_contents('http://api.icndb.com/jokes/random'));
                     $this->say($joke->value->joke);
-                } else {
+                } if ($answer->getValue() === 'quote') {
                     $this->say(Inspiring::quote());
+                } if ($answer->getValue() === 'news') {
+                    $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
+                    $this->say($json->ultimas[0]->title);
+                       $this->say($json->ultimas[0]->url);
+                    $this->say($json->ultimas[1]->title); 
+                        $this->say($json->ultimas[1]->url);
+                    $this->say($json->ultimas[2]->title);
+                        $this->say($json->ultimas[2]->url);
+                    $this->say($json->ultimas[3]->title);
+                        $this->say($json->ultimas[3]->url);
+                    $this->say($json->ultimas[4]->title);
+                        $this->say($json->ultimas[4]->url);
+
                 }
-            }
-        });
+        }});
     }
 
     /**

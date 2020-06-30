@@ -16,7 +16,7 @@ class ExampleTest extends TestCase
     {
         $this->bot
             ->receives('Hi')
-            ->assertReply('Hello!');
+            ->assertReply('Hello! que quieres hacer?');
     }
 
     /**
@@ -27,22 +27,21 @@ class ExampleTest extends TestCase
     public function testConversationBasicTest()
     {
         $quotes = [
-            'When there is no desire, all things are at peace. - Laozi',
-            'Simplicity is the ultimate sophistication. - Leonardo da Vinci',
-            'Simplicity is the essence of happiness. - Cedric Bledsoe',
-            'Smile, breathe, and go slowly. - Thich Nhat Hanh',
-            'Simplicity is an acquired taste. - Katharine Gerould',
-            'Well begun is half done. - Aristotle',
-            'He who is contented is rich. - Laozi',
-            'Very little is needed to make a happy life. - Marcus Antoninus',
-            'It is quality rather than quantity that matters. - Lucius Annaeus Seneca',
-            'Genius is one percent inspiration and ninety-nine percent perspiration. - Thomas Edison',
-            'Computer science is no more about computers than astronomy is about telescopes. - Edsger Dijkstra',
+            "Las mejores cosas de la vida te deshacen el pelo",
+            "No soy vago, estoy en modo ahorro de energía",
+            "Lo malo no es vivir en las nubes, sino bajar",
+            "Odio ser bipolar, es una sensación fantástica",
+            "Previsión del tiempo para esta noche: estará oscuro",
+            "Las cuatro palabras más bonitas de nuestro idioma: ya te lo dije",
+            "Lo más cerca que una persona llega a la perfección es el día que rellena una solicitud de empleo",
+            "Un día sin sol es, ya sabes, de noche",
+            "No renuncies a tus sueños... Sigue durmiendo",
+            "El tiempo sin ti es empo"
         ];
 
         $this->bot
-            ->receives('Start Conversation')
-            ->assertQuestion('Huh - you woke me up. What do you need?')
+            ->receives('Cuentame algo')
+            ->assertQuestion('¿Que quieres que haga por ti?')
             ->receivesInteractiveMessage('quote')
             ->assertReplyIn($quotes);
     }

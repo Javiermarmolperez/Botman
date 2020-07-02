@@ -34,16 +34,14 @@ class ExampleConversation extends Conversation
                 } if ($answer->getValue() === 'news') {
                     $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
                     $this->say($json->ultimas[0]->title);
-                       $this->say($json->ultimas[0]->url);
+                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 1</a> </strong>');
                     $this->say($json->ultimas[1]->title); 
-                        $this->say($json->ultimas[1]->url);
+                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 2</a> </strong>');
                     $this->say($json->ultimas[2]->title);
-                        $this->say($json->ultimas[2]->url);
+                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 3</a> </strong>');
                     $this->say($json->ultimas[3]->title);
-                        $this->say($json->ultimas[3]->url);
-                    $this->say($json->ultimas[4]->title);
-                        $this->say($json->ultimas[4]->url);
-
+                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 4</a> </strong>');
+                    $this->say(' <strong> Para mas notícias visita  <a href="https://www.crhoy.com/" target="_blank">crhoy</a> </strong>');
                 }
         }});
     }

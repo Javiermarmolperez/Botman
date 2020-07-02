@@ -33,14 +33,11 @@ class ExampleConversation extends Conversation
                     $this->say(Inspiring::quote());
                 } if ($answer->getValue() === 'news') {
                     $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
-                    $this->say($json->ultimas[0]->title);
-                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 1</a> </strong>');
-                    $this->say($json->ultimas[1]->title); 
-                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 2</a> </strong>');
-                    $this->say($json->ultimas[2]->title);
-                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 3</a> </strong>');
-                    $this->say($json->ultimas[3]->title);
-                        $this->say(' <strong> <a href="https://www.crhoy.com/" target="_blank">Noticia 4</a> </strong>');
+                    $this->say('<strong> <a href="'.$json->ultimas[0]->url.'" target="_blank">Noticia 1</a> </strong> <br> <br>' . $json->ultimas[0]->title);
+                    $this->say('<strong> <a href="'.$json->ultimas[1]->url.'" target="_blank">Noticia 2</a> </strong> <br> <br>' . $json->ultimas[1]->title); 
+                    $this->say('<strong> <a href="'.$json->ultimas[2]->url.'" target="_blank">Noticia 3</a> </strong> <br> <br>' . $json->ultimas[2]->title);
+                    $this->say('<strong> <a href="'.$json->ultimas[3]->url.'" target="_blank">Noticia 4</a> </strong> <br> <br>' . $json->ultimas[3]->title);
+                    $this->say('<strong> <a href="'.$json->ultimas[4]->url.'" target="_blank">Noticia 5</a> </strong> <br> <br>' . $json->ultimas[4]->title);
                     $this->say(' <strong> Para mas notícias visita  <a href="https://www.crhoy.com/" target="_blank">crhoy</a> </strong>');
                 }
         }});

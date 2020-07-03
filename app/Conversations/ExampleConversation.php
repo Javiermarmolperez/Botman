@@ -24,7 +24,7 @@ class ExampleConversation extends Conversation
                 Button::create('Cuéntame un chiste')->value('broma'),
                 Button::create('Últimas noticias')->value('noticias'),
                 Button::create('Frase del día')->value('quote'),
-                Button::create('El tiempo')->value('tiempo'),
+                Button::create('El tiempo en Barcelona')->value('tiempo'),
 
             ]);
 

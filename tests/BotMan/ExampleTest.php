@@ -16,14 +16,11 @@ class ExampleTest extends TestCase
     {
         $this->bot
             ->receives('Hi')
+
             ->assertReply('Perdon,no entendi...');
+
     }
 
-    /**
-     * A conversation test example.
-     *
-     * @return void
-     */
     public function testConversationBasicTest()
     {
         $quotes = [
@@ -42,8 +39,10 @@ class ExampleTest extends TestCase
         $this->bot
             ->receives('Cuentame algo')
             ->assertQuestion('¿Que quieres que haga por ti?')
-            ->receivesInteractiveMessage('quote');
-            /* ->assertReplyIn($quotes); */
+          
+            ->receivesInteractiveMessage('quote')
+            ->assertReplyIn($quotes);
+
     }
 
     public function testExtractObjectFromTheApiNewsTest()

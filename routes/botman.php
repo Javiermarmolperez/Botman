@@ -25,7 +25,7 @@ $botman->hears('Backend', function ($bot) {
     $bot->reply('Vale, su extension es: 34 0202 0002');
 });
 $botman->hears('Design', function ($bot) {
-    $bot->reply('Vale, su extencion es: 34 0303 0003');
+    $bot->reply('Vale, su extension es: 34 0303 0003');
 });
 $botman->hears('Gracias', function ($bot) {
     $bot->reply('De nada! Algo mas?');
@@ -34,5 +34,8 @@ $botman->hears('.*(No gracias|no|no ya esta).*', function ($bot) {
     $bot->reply('Que tengas un buen dia!');
 });
 
-$botman->hears('Cuentame algo', BotManController::class.'@startConversation');
+
+$botman->hears('.*(menu|ver el menu).*', BotManController::class.'@startConversation');
+
+
 

@@ -12,7 +12,6 @@ $botman->hears('.*(necesito mas informacion|necesito una extension).*', function
     $bot->reply('Para mas informacion escoge una de las opciones: Departamentos, Chiste' );
 });
 
-
 $botman->hears('Departamentos', function ($bot) {
     $bot->reply('Vale, tenemos: Frontend, Backend, Design' );
 });
@@ -35,6 +34,8 @@ $botman->hears('.*(No gracias|no|no ya esta).*', function ($bot) {
     $bot->reply('Que tengas un buen dia!');
 });
 
+
 $botman->hears('.*(menu|ver el menu).*', BotManController::class.'@startConversation');
+
 
 

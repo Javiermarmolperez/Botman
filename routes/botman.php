@@ -4,12 +4,12 @@ use App\Http\Controllers\BotManController;
 
 $botman = resolve('botman');
 
-$botman->hears('.*(Hola|buenas|buenos dias|Buenas tardes|Buenas noches).*', function ($bot) {
-    $bot->reply('Hola! que necesitas?' );
+$botman->hears('.*(Hola|buenas|buenos días|Buenas tardes|Buenas noches).*', function ($bot) {
+    $bot->reply('Hola! ¿Qué necesitas?' );
 });
 
-$botman->hears('.*(necesito mas informacion|necesito una extension).*', function ($bot) {
-    $bot->reply('Para mas informacion escoge una de las opciones: Departamentos, Chiste' );
+$botman->hears('.*(necesito mas información|necesito una extensión).*', function ($bot) {
+    $bot->reply('Para mas información escoge una de las opciones: Departamentos, Chiste' );
 });
 
 
@@ -17,7 +17,7 @@ $botman->hears('Departamentos', function ($bot) {
     $bot->reply('Vale, tenemos: Frontend, Backend, Design' );
 });
 $botman->fallback(function($bot) {
-    $bot->reply('Perdon,no entendi...');
+    $bot->reply('Perdón,no entendí...');
 });
 $botman->hears('Frontend', function ($bot) {
     $bot->reply('Vale, su extension es: 34 0101 0001');

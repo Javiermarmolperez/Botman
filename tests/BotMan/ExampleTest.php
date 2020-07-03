@@ -17,7 +17,7 @@ class ExampleTest extends TestCase
         $this->bot
             ->receives('Hi')
 
-            ->assertReply('Perdon,no entendi...');
+            ->assertReply('Perdón,no entendí...');
 
     }
 
@@ -37,7 +37,7 @@ class ExampleTest extends TestCase
         ];
 
         $this->bot
-            ->receives('Cuentame algo')
+            ->receives('menu')
             ->assertQuestion('¿Que quieres que haga por ti?')
           
             ->receivesInteractiveMessage('quote')

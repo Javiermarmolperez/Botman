@@ -16,14 +16,11 @@ class ExampleTest extends TestCase
     {
         $this->bot
             ->receives('Hi')
-            ->assertReply('Hello! que quieres hacer?');
+
+            ->assertReply('Perdon,no entendi...');
+
     }
 
-    /**
-     * A conversation test example.
-     *
-     * @return void
-     */
     public function testConversationBasicTest()
     {
         $quotes = [
@@ -42,7 +39,44 @@ class ExampleTest extends TestCase
         $this->bot
             ->receives('Cuentame algo')
             ->assertQuestion('¿Que quieres que haga por ti?')
+          
             ->receivesInteractiveMessage('quote')
             ->assertReplyIn($quotes);
+
     }
+
+    public function testExtractObjectFromTheApiNewsTest()
+    {
+        $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
+        $data = $json->ultimas[0];
+
+        $this->assertIsObject($data);
+    }
+
+    public function testExtractDataIdFromTheApiNewsTest()
+    {
+        $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
+        $dataId = $json->ultimas[0]->id;
+
+        $this->assertIsNumeric($dataId);
+    }
+
+
+    public function testExtractDataTitleFromTheApiNewsTest()
+    {
+        $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
+        $dataTitle = $json->ultimas[0]->title;
+
+        $this->assertIsString($dataTitle);
+    }
+
+
+    public function testExtractDataUrlFromTheApiNewsTest()
+    {
+        $json = json_decode(file_get_contents('https://api.crhoy.net/ultimas/5.json'));
+        $dataUrl = $json->ultimas[0]->url;
+
+        $this->assertIsString($dataUrl);
+    }
+
 }

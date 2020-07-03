@@ -19,7 +19,7 @@ class ExampleConversation extends Conversation
             ->fallback('Unable to ask question')
             ->callbackId('ask_reason')
             ->addButtons([
-                Button::create('cuentame un chiste')->value('joke'),
+                Button::create('Cuentame un chiste')->value('joke'),
                 Button::create('Frase del dia')->value('quote'),
                 Button::create('Noticias')->value('news'),
             ]);
